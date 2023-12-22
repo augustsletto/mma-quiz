@@ -1,3 +1,4 @@
+/*jshint esversion: 6 */
 const quizData = [
     
     {
@@ -64,7 +65,7 @@ const quizData = [
         document.getElementById('usernameContainer').style.display = 'none';
         displayQuestion();
     }   else {
-        alert('Please enter a username to start the MMA quiz')
+        alert('Please enter a username to start the MMA quiz');
     }
   }
 
