@@ -74,7 +74,12 @@ The deployed MMA Quiz website can be accessed via the following link: [MMA Quiz]
 
 ## Media
 
-![MMA Quiz Screenshot](path/to/screenshot.png)
+![MMA Quiz Screenshot](assets/READMEimages/First.jpg)
+![MMA Quiz Screenshot](assets/READMEimages/second.jpg)
+![MMA Quiz Screenshot](assets/READMEimages/correct.jpg)
+![MMA Quiz Screenshot](assets/READMEimages/incorrect.jpg)
+![MMA Quiz Screenshot](assets/READMEimages/score.jpg)
+
 Add any relevant screenshots or media showcasing the quiz interface.
 
 ## HTML and CSS Validator
