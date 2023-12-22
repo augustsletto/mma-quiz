@@ -74,11 +74,11 @@ The deployed MMA Quiz website can be accessed via the following link: [MMA Quiz]
 
 ## Media
 
-![MMA Quiz Screenshot](assets/READMEimages/First.jpg)
-![MMA Quiz Screenshot](assets/READMEimages/second.jpg)
-![MMA Quiz Screenshot](assets/READMEimages/correct.jpg)
-![MMA Quiz Screenshot](assets/READMEimages/incorrect.jpg)
-![MMA Quiz Screenshot](assets/READMEimages/score.jpg)
+![MMA Quiz Screenshot1](assets/READMEimages/First.jpg)
+![MMA Quiz Screenshot2](assets/READMEimages/second.jpg)
+![MMA Quiz Screenshot3](assets/READMEimages/correct.jpg)
+![MMA Quiz Screenshot4](assets/READMEimages/incorrect.jpg)
+![MMA Quiz Screenshot5](assets/READMEimages/score.jpg)
 ![HTML Validator](assets/READMEimages/htmlvalid.jpg)
 ![CSS Validator](assets/READMEimages/cssvalid.jpg)
 ![Am I Responsive](assets/READMEimages/amiresponsive.jpg)
