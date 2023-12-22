@@ -1,39 +1,82 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# MMA Quiz
 
-Welcome,
+This repository contains code for an interactive MMA (Mixed Martial Arts) Quiz website. The quiz is designed to test users' knowledge about various aspects of MMA, including fighters, techniques, and historical facts.
 
-This is the Code Institute student template for Codeanywhere. If you are using Gitpod then you need [this template](https://github.com/Code-Institute-Org/gitpod-full-template) instead.  We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+## Table of Contents
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Codeanywhere and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **August 30th, 2023**
+- [MMA Quiz](#mma-quiz)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Features](#features)
+  - [Technologies Used](#technologies-used)
+  - [Usage](#usage)
+  - [Testing](#testing)
+    - [Overview](#overview)
+    - [Test Cases](#test-cases)
+    - [Tools Used](#tools-used)
+    - [Test Results](#test-results)
+  - [Deployment](#deployment)
+  - [Media](#media)
+  - [HTML and CSS Validator](#html-and-css-validator)
 
-## Codeanywhere Reminders
+## Description
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere, in the terminal, type:
+The MMA Quiz website is an interactive platform that presents a series of questions related to MMA, allowing users to test their knowledge in this field. It offers multiple-choice questions covering various topics such as famous fighters, historical events, and fighting techniques.
 
-`python3 -m http.server`
+## Features
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- Multiple-choice quiz format
+- Questions covering a wide range of MMA-related topics
+- Immediate feedback for correct and incorrect answers
+- Final score display upon completing the quiz
+- "Try Again" functionality to restart the quiz
 
-To run a frontend (HTML, CSS, Javascript only) application in Codeanywhere with no-cache, you can use this alias for `python3 -m http.server`.
+## Technologies Used
 
-`http_server`
+- HTML5
+- CSS3
+- JavaScript
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+## Usage
 
-A button should appear to click: _Open Preview_ or _Open Browser_.
+- **Start Quiz**: Enter a username and click the "Start Quiz" button to begin the quiz.
+- **Answer Questions**: Select answers to the multiple-choice questions provided.
+- **Feedback**: Immediate feedback for correct and incorrect answers.
+- **End of Quiz**: After answering all questions, view your final score and an option to try the quiz again.
 
-In Codeanywhere you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+## Testing
 
-To log into the Heroku toolbelt CLI:
+### Overview
 
-1. Log in to your Heroku account and go to _Account Settings_ in the menu under your avatar.
-2. Scroll down to the _API Key_ and click _Reveal_
-3. Copy the key
-4. In Codeanywhere, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+The MMA Quiz underwent testing to ensure smooth functionality and responsiveness across different devices and browsers. The testing phase focused on assessing the user interface, functionality, and overall user experience.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+### Test Cases
 
----
+- **Responsiveness**: Checked the website's responsiveness on various devices using manual testing and browser dev tools.
+- **Cross-Browser Compatibility**: Verified compatibility across multiple browsers such as Chrome, Firefox, Safari, and Edge.
+- **Feature Testing**: Ensured that all quiz features (question presentation, answer selection, feedback, and score display) function as expected.
+- **Usability Testing**: Involved real users to assess the ease of use and navigation of the quiz.
 
-Happy coding!
+### Tools Used
+
+- **Google Chrome DevTools**: Inspected elements, debugged, and tested responsiveness.
+- **Manual Testing**: Thoroughly checked the user interface, functionalities, and behavior manually.
+
+### Test Results
+
+The project successfully passed all test cases, demonstrating consistent performance across different devices and browsers. Reported issues were addressed and resolved.
+
+## Deployment
+
+The project was developed using local development environments and deployed using GitHub Pages.
+
+The deployed MMA Quiz website can be accessed via the following link: [MMA Quiz](https://yourusername.github.io/mma-quiz)
+
+## Media
+
+![MMA Quiz Screenshot](path/to/screenshot.png)
+Add any relevant screenshots or media showcasing the quiz interface.
+
+## HTML and CSS Validator
+
+Validated all HTML and CSS documents for standards compliance.
