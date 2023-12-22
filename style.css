@@ -7,9 +7,9 @@ body{
     justify-content: center;
     text-align: center;
     flex-direction: column;
-    background-color: #FFF2D8;
+    background-color: #FFF2D8;/* Setting background color */
 }
-
+/* Styling for the quiz section */
 #quizSection{
     display:flex;
     align-items: center;
@@ -17,12 +17,12 @@ body{
     text-align: center;
     flex-direction: column;
 }
-
+/* List styles */
 ul{
     padding:0;
 }
 
-
+/* List item styles */
 li{
     list-style-type: none;
     margin: 10px;
@@ -35,7 +35,7 @@ font-family: 'Encode Sans Condensed', sans-serif;
 
 
 
-
+/* Username input container styles */
 #usernameContainer{
     display:flex;
     flex-direction: column;
@@ -44,13 +44,13 @@ font-family: 'Encode Sans Condensed', sans-serif;
     justify-content: center;
     gap: 10px;
 }
-
+/* Feedback section styles */
 #feedbackSection{
     font-family: 'Cormorant Garamond', serif;
 font-family: 'Encode Sans Condensed', sans-serif;
 }
 
-
+/* Button styles */
 button {
   background: #FF4742;
   border: 1px solid #FF4742;
@@ -75,7 +75,7 @@ button {
   touch-action: manipulation;
   vertical-align: middle;
 }
-
+/* Button hover and active styles */
 button:hover,
 button:active {
   background-color: initial;

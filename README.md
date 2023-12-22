@@ -17,7 +17,7 @@ This repository contains code for an interactive MMA (Mixed Martial Arts) Quiz w
     - [Test Results](#test-results)
   - [Deployment](#deployment)
   - [Media](#media)
-  - [HTML and CSS Validator](#html-and-css-validator)
+  - [HTML, CSS and JS Validated](#html-css-and-js-validated)
 
 ## Description
 
@@ -82,9 +82,11 @@ The deployed MMA Quiz website can be accessed via the following link: [MMA Quiz]
 ![HTML Validator](assets/READMEimages/htmlvalid.jpg)
 ![CSS Validator](assets/READMEimages/cssvalid.jpg)
 ![Am I Responsive](assets/READMEimages/amiresponsive.jpg)
+![Am I Responsive](assets/READMEimages/lighthouse.jpg)
+
 
 Add any relevant screenshots or media showcasing the quiz interface.
 
-## HTML and CSS Validator
+## HTML, CSS and JS Validated
 
-Validated all HTML and CSS documents for standards compliance.
+Validated all HTML, CSS and JavaScript documents for standards compliance.
