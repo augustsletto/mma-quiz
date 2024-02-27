@@ -193,7 +193,7 @@ function updateHighScoreTable() {
   // Take only the top 10 high scores
   const top10Scores = highScores.slice(0, 10);
   highScoreTable.innerHTML = `<h3>High Scores</h3><ul>${top10Scores.map((score, index) => 
-    `<li>${index === 0 ? `<img src="/assets/images/golden-belt.png" alt="Golden Belt" style="width: 20px; height: auto; margin-right: 5px;">` : ''}
+    `<li>${index === 0 ? `<img src="https://res.cloudinary.com/dt4sw7qtl/image/upload/v1709057072/golden-belt_wbtbom.png" alt="Golden Belt" style="width: 20px; height: auto; margin-right: 5px;">` : ''}
     ${score.username} - ${score.score}/${quizData.length}</li>`).join('')}</ul>`;
 
  
