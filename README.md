@@ -108,7 +108,7 @@ The design of the MMA Quiz website is focused on providing an intuitive and user
 #### Color Theme
 - **Background Color (Body):** `#FFF2D8` - This light, neutral background color enhances readability and contrasts well with the content displayed on the page.
 - **Button Color:** `#FF4742` - The vibrant red color chosen for buttons adds a bold and attention-grabbing element to the interface, encouraging user interaction.
-- **Timer Indicator:** The timer bar changes color dynamically during the countdown, transitioning from green to red as the time runs out, providing visual cues to the user.
+- **Timer Indicator:** The timer changes color dynamically during the countdown, transitioning from green to red as the time runs out, providing visual cues to the user.
 
 #### Fonts
 - **Heading Font:** `Cormorant Garamond` - This serif font adds a touch of sophistication to headings, contributing to a polished and professional appearance.
@@ -157,11 +157,12 @@ By following these steps, users can effectively navigate through the quiz, answe
 | Test Case                | Expected Outcome          | Result  |
 |--------------------------|---------------------------|---------|
 | Start quiz without username | Prompt to enter username | Passed  |
+| Start quiz with only space("  ") in username | Prompt to enter username | Passed  |
 | Answer all questions    | Display final score       | Passed  |
-| Achieving a Perfect Score| Record user's name beside the trophy icon if they are the first to achieve a perfect score| Passed  |
+| Achieving a Perfect Score| Record user's name beside the trophy icon if they are the first to achieve a perfect score and plays victory sound| Passed  |
 | Responsive design check | Correct display on all device sizes | Passed |
 | Cross-browser compatibility | Consistent performance across browsers | Passed |
-| Answer button deactivation after selection | Prevent spam-clicking by ssidabling answer buttons briefly | Passed |
+| Prevent spam-clicking through answers | Answer button deactivation after selection and reactivated after timeout | Passed |
 | Answering at the last second | Correctly register the answer without causing a bug  | Passed |
 
 
@@ -238,16 +239,9 @@ This project was inspired by the vibrant MMA community and the desire to provide
 - The validation checks confirming that the quiz interface meets the necessary requirements, ensuring its functionality and usability.
 
 
-
-
-
-
 ![HTML Validator](assets/READMEimages/htmlvalid.jpg)
 ![CSS Validator](assets/READMEimages/cssvalid.jpg)
 
-
-
-Add any relevant screenshots or media showcasing the quiz interface.
 
 ## HTML, CSS and JS Validated
 
