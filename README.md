@@ -121,11 +121,29 @@ The design of the MMA Quiz website is focused on providing an intuitive and user
 
 ## Usage
 
-1. **Start Quiz:** Users enter their username and click the "Start Quiz" button.
-2. **Answer Questions:** Select answers from the multiple-choice options.
-3. **Feedback:** Receive immediate feedback after each question.
-4. **End of Quiz:** View your final score and choose to retry the quiz or enter as a new user.
 
+#### Start Quiz
+1. **Enter Username:** Users must enter their username in the designated input field.
+2. **Click "Start Quiz":** Once the username is entered, users should click the "Start Quiz" button to begin.
+
+#### Answer Questions
+- After starting the quiz, users will be presented with multiple-choice questions related to MMA.
+- Select the answer they believe to be correct from the provided options.
+- Each question has a time limit, and users must answer within the specified time.
+
+#### Feedback
+- **Immediate Feedback:** Upon selecting an answer, users will receive immediate feedback indicating whether their answer was correct or incorrect.
+- Correct answers sends a message highlighted in green, while incorrect answers are given message highlighted in red.
+- The correct answer is displayed along with the feedback message.
+
+#### End of Quiz
+- **View Final Score:** After answering all the questions, users will see their final score.
+- They can view how many questions they answered correctly out of the total.
+- Users have the option to retry the quiz or start as a new user.
+  - Click "Try Again" to restart the quiz with the same username.
+  - Click "New User" to enter a new username and start the quiz again.
+
+By following these steps, users can effectively navigate through the quiz, answer questions, receive feedback, and view their final score.
 ## Testing
 
 ### Manual Testing Steps
