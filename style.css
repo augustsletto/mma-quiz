@@ -5,10 +5,14 @@ h1, h2{
 font-family: 'Encode Sans Condensed', sans-serif;
 }
 
+
+
+
 #highScoreTable {
-    position: fixed;
-    top: 30px;
-    right: 100px;
+    position: relative;
+    top: auto;
+    width: 300px;
+    right: auto;
     padding: 20px;
     background-color: #1c1c1c; 
     color: #fff; 
@@ -17,6 +21,8 @@ font-family: 'Encode Sans Condensed', sans-serif;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3); 
     font-family: 'Arial', sans-serif; 
     font-size: 16px; 
+    margin: 20px auto;
+    box-sizing: border-box;
     
 }
 
@@ -146,15 +152,7 @@ button:active {
 button:active {
   opacity: .5;
 }
-@media (max-width: 768px) {
-  body, h1, h2, button {
-    font-size: smaller; /* Adjust font size for smaller screens */
-  }
 
-
-  
-
-}
 
 
 
@@ -174,27 +172,5 @@ button:active {
 }
 
 
-@media (max-width: 1100px) {
-    /* Adjust styles for smaller screens */
-    #highScoreTable {
-      position: relative; /* Change from fixed to relative */
-      top: auto; /* Reset top position */
-      right: auto; /* Reset right position */
-      width: 90%; /* Make the width responsive */
-      margin: 20px auto; /* Center the table on the screen with some margin */
-      box-sizing: border-box; /* Ensure padding is included in the width */
-    }
-  
-    body, h1, h2, button {
-      font-size: smaller; /* Adjust font size for smaller screens if needed */
-    }
-  
-    /* Additional adjustments for smaller screens */
-    #quizSection, #usernameContainer, #feedbackSection, #scoreSection {
-      width: 90%; /* Adjust widths to be more responsive */
-      margin: 0 auto; /* Center content */
-    }
-  }
-  
-  
+
   
