@@ -61,6 +61,7 @@ let currentQuestion = 0; // Keeps track of the current question index
 let score = 0; // Keeps track of the user's score
 let timerInterval; // Variable to store the timer interval
 const timeLimit = 10; // Time limit for each question in seconds
+let answerSubmitted = false;
 
 // Function to start the quiz
 function startQuiz() {
@@ -83,6 +84,7 @@ function startTimer() {
     let timeLeft = timeLimit;
     const timerBar = document.getElementById('timerBar');
     const timerDisplay = document.getElementById('timerDisplay');
+    answerSubmitted = false;
 
     // Update the timer bar width based on time left
     function updateTimerBar() {
@@ -103,18 +105,21 @@ function startTimer() {
     }
 
     // Start the timer interval
+    
     timerInterval = setInterval(() => {
-        timeLeft--;
-        updateTimerBar();
-        updateTimerDisplay();
+        if (!answerSubmitted) { // Check if no answer has been submitted yet
+            timeLeft--;
+            updateTimerBar();
+            updateTimerDisplay();
 
-        timerDisplay.textContent = `${timeLeft} seconds`;
-
-        // Check if time is up
-        if (timeLeft === 0) {
-            clearInterval(timerInterval); // Stop the timer
-            displayFeedback("Time's up! Please try again.", false); // Display feedback
-            setTimeout(tryAgain, 2000); // Automatically try again after 2 seconds
+            if (timeLeft === 0) {
+                clearInterval(timerInterval);
+                displayFeedback("Time's up! Please try again.", false);
+                setTimeout(tryAgain, 2000); // This can be adjusted as needed
+            }
+        } else {
+            // If an answer has been submitted, clear the interval and prevent further countdown
+            clearInterval(timerInterval);
         }
     }, 1000); // Update timer every second
 
@@ -163,6 +168,7 @@ function displayQuestion() {
 // Function to check the selected answer against the correct answer
 function checkAnswer(answer) {
     stopTimer(); // Stop the timer when the user selects an answer
+    answerSubmitted = true;
 
     const optionButtons = document.querySelectorAll('#quizSection ul li button');
     optionButtons.forEach(button => {
