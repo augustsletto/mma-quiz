@@ -105,9 +105,19 @@ These features are meticulously designed to ensure that the MMA Quiz website is 
 
 The design of the MMA Quiz website is focused on providing an intuitive and user-friendly experience. Key design considerations include:
 
-- **Color Scheme:** Chosen to reflect the intensity and energy associated with MMA.
-- **Fonts:** Selected for readability and to complement the site's aesthetics.
-- **Layout:** Strategically designed to facilitate ease of navigation and interaction.
+#### Color Theme
+- **Background Color (Body):** `#FFF2D8` - This light, neutral background color enhances readability and contrasts well with the content displayed on the page.
+- **Button Color:** `#FF4742` - The vibrant red color chosen for buttons adds a bold and attention-grabbing element to the interface, encouraging user interaction.
+- **Timer Indicator:** The timer bar changes color dynamically during the countdown, transitioning from green to red as the time runs out, providing visual cues to the user.
+
+#### Fonts
+- **Heading Font:** `Cormorant Garamond` - This serif font adds a touch of sophistication to headings, contributing to a polished and professional appearance.
+- **Body Text Font:** `Encode Sans Condensed` - As a condensed sans-serif font, Encode Sans Condensed offers a modern and streamlined look for body text, ensuring clarity and readability.
+
+#### Layout
+- **Flexbox Layout:** The use of Flexbox CSS for layout ensures that elements are properly aligned and responsive across different screen sizes. This layout approach facilitates centering elements both vertically and horizontally, enhancing the overall visual balance of the page.
+- **Header and Main Sections:** The header section prominently displays the quiz title and introductory message, while the main section contains the quiz questions, feedback, and score display. This clear separation of content helps users navigate the quiz interface intuitively.
+
 
 ## Usage
 
@@ -193,13 +203,26 @@ This project was inspired by the vibrant MMA community and the desire to provide
 
 ## Media
 
+- The first page of the quiz interface displaying a name form and an option to start the quiz. The high score section is currently empty.
 ![MMA Quiz Screenshot1](assets/READMEimages/quiz11.jpg)
+- The first question of the quiz displayed with a timer counting down. The text is displayed in green.
 ![MMA Quiz Screenshot1](assets/READMEimages/quiz2.jpg)
+- The quiz timer is shown with less than 3 seconds remaining, causing the text to turn red as the time runs out.
 ![MMA Quiz Screenshot1](assets/READMEimages/quiz3.jpg)
+- The notification displayed when the quiz time is up, indicating that the user has run out of time to answer the question.
 ![MMA Quiz Screenshot1](assets/READMEimages/quiz4.jpg)
+- The quiz is complete, showing that the user answered 9 out of 10 questions correctly. Options to try again or register as a new user are available. The high score section displays the user's score, with the top scorer receiving a trophy next to their name.
 ![MMA Quiz Screenshot1](assets/READMEimages/quiz5.jpg)
+- The interface displayed when the "New User" option is selected, prompting the user to register with their information.
 ![MMA Quiz Screenshot1](assets/READMEimages/quiznewuser.jpg)
+- The quiz interface shown across different screen sizes, demonstrating its responsiveness to various devices.
 ![AMIRESPONSIVE](assets/READMEimages/amiresponsive123.jpg)
+- The validation checks confirming that the quiz interface meets the necessary requirements, ensuring its functionality and usability.
+
+
+
+
+
 
 ![HTML Validator](assets/READMEimages/htmlvalid.jpg)
 ![CSS Validator](assets/READMEimages/cssvalid.jpg)
