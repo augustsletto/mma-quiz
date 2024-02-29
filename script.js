@@ -64,7 +64,7 @@ const quizData = [
   // Function to start the quiz
   function startQuiz() {
       // Retrieve username input
-      const username = document.getElementById('username').value;
+      const username = document.getElementById('username').value.trim();
       // Check if username is not empty
       if (username !== '') {
           // Hide username input container and display the first question
