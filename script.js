@@ -272,3 +272,9 @@ function updateHighScoreTable() {
         `<li>${index === 0 ? `<img src="https://res.cloudinary.com/dt4sw7qtl/image/upload/v1709057072/golden-belt_wbtbom.png" alt="Golden Belt" style="width: 20px; height: auto; margin-right: 5px;">` : ''}
     ${score.username} - ${score.score}/${quizData.length}</li>`).join('')}</ul>`;
 }
+
+
+document.addEventListener('DOMContentLoaded', (event) => {
+    updateHighScoreTable(); // This updates and displays high scores as soon as the page loads
+    
+});
