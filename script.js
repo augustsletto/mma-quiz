@@ -151,6 +151,12 @@ function displayQuestion() {
     </ul>
     `;
 
+    // Re-enable the option buttons now that new options are displayed
+    const optionButtons = document.querySelectorAll('#quizSection ul li button');
+    optionButtons.forEach(button => {
+        button.disabled = false;
+    });
+
     startTimer(); // Start the timer for the current question
 }
 
@@ -158,24 +164,36 @@ function displayQuestion() {
 function checkAnswer(answer) {
     stopTimer(); // Stop the timer when the user selects an answer
 
+    const optionButtons = document.querySelectorAll('#quizSection ul li button');
+    optionButtons.forEach(button => {
+        button.disabled = true;
+    });
+
+
     // Compare selected answer with the correct answer
     const currentQuizData = quizData[currentQuestion];
     if (answer === currentQuizData.answer) {
         // Increment the score and display correct feedback
         score++;
-        displayFeedback("Correct!", true);
+        if (currentQuestion < quizData.length - 1) {
+            displayFeedback("Correct!", true);
+        }
     } else {
         // Display incorrect feedback with the correct answer
-        displayFeedback(`Incorrect! The correct answer is ${currentQuizData.answer}.`, false);
+        if (currentQuestion < quizData.length - 1) {
+            displayFeedback(`Incorrect! The correct answer is ${currentQuizData.answer}.`, false);
+        }
     }
     currentQuestion++; // Move to the next question
 
     // Display next question or final score
-    if (currentQuestion < quizData.length) {
-        setTimeout(displayQuestion, 2000); // Display the next question
-    } else {
-        setTimeout(displayResult, 2000); // Display the final score
-    }
+    setTimeout(() => {
+        if (currentQuestion < quizData.length) {
+            displayQuestion(); // Display the next question
+        } else {
+            displayResult(); // Display the final score
+        }
+    }, 2000); // Delay to prevent immediate jumping to the next question
 }
 
 // Function to display feedback (correct or incorrect) after answering each question
@@ -189,15 +207,25 @@ function displayFeedback(message, isCorrect) {
 
 // Function to display the final quiz result
 function displayResult() {
-    const username = document.getElementById('username').value; // Assuming you have this element
+    const username = document.getElementById('username').value;
+    const maxScore = quizData.length;
     saveHighScore(username, score); // Save the current score with the username
     updateHighScoreTable(); // Update the high score table display
 
     document.getElementById('quizSection').style.display = 'none'; // Hide quiz section
     const scoreSection = document.getElementById('scoreSection');
-    scoreSection.innerHTML = `<h2>Quiz Complete</h2><p>Your score: ${score}/${quizData.length}</p><button onclick="tryAgain()">Try Again</button><button onclick="newUser()">New User</button>`;
+    
 
-    if (score === quizData.length) {
+    let message;
+    if (score === maxScore) {
+        message = `Congratulations, ${username}! You got ${score} out of ${maxScore} correct! Perfect score!`;
+    } else {
+        message = `Nice try, ${username}! You got ${score} out of ${maxScore} correct!`;
+    }
+
+    scoreSection.innerHTML = `<h2>Quiz Complete</h2><p>${message}</p><button onclick="tryAgain()">Try Again</button><button onclick="newUser()">New User</button>`;
+
+    if (score === maxScore) {
         const audio = document.getElementById('celebrationAudio');
         audio.style.display = 'block';
         audio.play();
