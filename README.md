@@ -193,15 +193,17 @@ This project was inspired by the vibrant MMA community and the desire to provide
 
 ## Media
 
-![MMA Quiz Screenshot1](assets/READMEimages/First.jpg)
-![MMA Quiz Screenshot2](assets/READMEimages/second.jpg)
-![MMA Quiz Screenshot3](assets/READMEimages/correct.jpg)
-![MMA Quiz Screenshot4](assets/READMEimages/incorrect.jpg)
-![MMA Quiz Screenshot5](assets/READMEimages/score.jpg)
+![MMA Quiz Screenshot1](assets/READMEimages/quiz11.jpg)
+![MMA Quiz Screenshot1](assets/READMEimages/quiz2.jpg)
+![MMA Quiz Screenshot1](assets/READMEimages/quiz3.jpg)
+![MMA Quiz Screenshot1](assets/READMEimages/quiz4.jpg)
+![MMA Quiz Screenshot1](assets/READMEimages/quiz5.jpg)
+![MMA Quiz Screenshot1](assets/READMEimages/quiznewuser.jpg)
+![AMIRESPONSIVE](assets/READMEimages/amiresponsive123.jpg)
+
 ![HTML Validator](assets/READMEimages/htmlvalid.jpg)
 ![CSS Validator](assets/READMEimages/cssvalid.jpg)
-![Am I Responsive](assets/READMEimages/amiresponsive.jpg)
-![Am I Responsive](assets/READMEimages/lighthouse.jpg)
+
 
 
 Add any relevant screenshots or media showcasing the quiz interface.
